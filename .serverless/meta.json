@@ -1,0 +1,102 @@
+{
+  "unknown": {
+    "versionSfCore": null,
+    "versionFramework": "4.4.5",
+    "isWithinCompose": false,
+    "composeOrgName": null,
+    "composeServiceName": null,
+    "command": [],
+    "options": {},
+    "error": null,
+    "machineId": "7eac8cbb5edfe467157ca789cb0752f4",
+    "serviceProviderAwsCfStackId": null,
+    "serviceProviderAwsCfStackCreated": null,
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": null,
+    "serviceProviderAwsCfStackOutputs": null
+  },
+  "/Users/abelonwu/apps/sam_ontap": {
+    "versionSfCore": null,
+    "versionFramework": "4.4.5",
+    "isWithinCompose": false,
+    "isCfn": true,
+    "composeOrgName": null,
+    "composeResolverProviders": {
+      "default-aws-credential-resolver": "<REDACTED>"
+    },
+    "composeServiceName": null,
+    "servicePath": "/Users/abelonwu/apps/sam_ontap",
+    "serviceConfigFileName": "/Users/abelonwu/apps/sam_ontap/template.yaml",
+    "service": {
+      "templateFile": {
+        "AWSTemplateFormatVersion": "2010-09-09",
+        "Transform": "AWS::Serverless-2016-10-31",
+        "Description": "An example RESTFul Service",
+        "Resources": {
+          "ExampleFunction": {
+            "Type": "AWS::Serverless::Function",
+            "Properties": {
+              "Runtime": "nodejs20.x",
+              "Handler": "index.handler",
+              "CodeUri": ".",
+              "Events": {
+                "ListCustomers": {
+                  "Type": "Api",
+                  "Properties": {
+                    "Path": "/",
+                    "Method": "any"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "samConfigFile": {},
+      "service": "my-dev1-stack",
+      "provider": {
+        "name": "aws",
+        "region": "us-east-1",
+        "stage": "dev"
+      }
+    },
+    "command": [
+      "remove"
+    ],
+    "options": {
+      "stack": "my-dev1-stack"
+    },
+    "error": null,
+    "params": {},
+    "machineId": "0680e68002dd7a0fba3b847a2ce7a4d4",
+    "stage": "dev",
+    "accessKeyV2": "<REDACTED>",
+    "accessKeyV1": "<REDACTED>",
+    "orgId": "649a5767-e072-4ccd-abbd-bf649f515eee",
+    "orgName": "hcubesys",
+    "userId": "S5zfkfZRtmJ6gXQbnH",
+    "dashboard": {
+      "isEnabledForService": false,
+      "requiredAuthentication": false,
+      "orgFeaturesInUse": null,
+      "orgObservabilityIntegrations": null,
+      "serviceAppId": null,
+      "serviceProvider": null,
+      "instanceParameters": null
+    },
+    "userName": "hcubesys",
+    "subscription": null,
+    "userEmail": "zzubiks@gmail.com",
+    "serviceProviderAwsRegion": "us-east-1",
+    "serviceProviderAwsCredentials": "<REDACTED>",
+    "serviceProviderAwsAccountId": "105387351673",
+    "serviceProviderAwsCfStackName": "my-dev1-stack",
+    "projectType": "sam",
+    "serviceUniqueId": "arn:aws:cloudformation:us-east-1:105387351673:stack/my-dev1-stack/ed3bd7f0-8745-11ef-b6d0-0affc6b1c035",
+    "serviceProviderAwsCfStackId": "arn:aws:cloudformation:us-east-1:105387351673:stack/my-dev1-stack/ed3bd7f0-8745-11ef-b6d0-0affc6b1c035",
+    "serviceProviderAwsCfStackCreated": "2024-10-10T20:26:27.474Z",
+    "serviceProviderAwsCfStackUpdated": null,
+    "serviceProviderAwsCfStackStatus": "CREATE_COMPLETE",
+    "serviceProviderAwsCfStackOutputs": null
+  }
+}
